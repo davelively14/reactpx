@@ -35,3 +35,11 @@ Added the `import` calls at the end of the file:
 import React from "react"
 import ReactDOM from "react-dom"
 ```
+
+## Here's what we installed
+
+#### npm
+
+```
+$ npm install --save react react-dom babel-preset-react
+```
