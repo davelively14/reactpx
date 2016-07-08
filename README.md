@@ -14,7 +14,7 @@ Only added the `presets:` array in the following block:
 ```javascript
 plugins: {
   babel: {
-    presets: ["es2015", "react"],
+    `**`presets: ["es2015", "react"],`**`
     ignore: [/web\/static\/vendor/]
   }
 },
@@ -24,7 +24,7 @@ Only added the `whitelist:` array in the following block:
 ```javascript
 npm: {
   enabled: true,
-  **whitelist: ["phoenix", "phoenix_html", "react", "react-dom"]**
+  `**`whitelist: ["phoenix", "phoenix_html", "react", "react-dom"]`**`
 }
 ```
 
