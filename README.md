@@ -24,13 +24,13 @@ Only added the `whitelist:` array in the following block:
 ```javascript
 npm: {
   enabled: true,
-  whitelist: ["phoenix", "phoenix_html", "react", "react-dom"]
+  **whitelist: ["phoenix", "phoenix_html", "react", "react-dom"]**
 }
 ```
 
 #### [app.js](/web/static/js/app.js)
 
-Added the `import` calls in the following block:
+Added the `import` calls at the end of the file:
 ```javascript
 import React from "react"
 import ReactDOM from "react-dom"
