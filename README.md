@@ -4,7 +4,7 @@ Tutorial for using React with Phoenix.  To find where we modified the configurat
 
 ## Config modified
 - [brunch-config.js](/brunch-config.js)
-- [app.js](web/static/js/app.js)
+- [app.js](/web/static/js/app.js)
 
 ## Here's what we configured
 
@@ -15,8 +15,23 @@ Only added the `presets:` array in the following block:
 plugins: {
   babel: {
     presets: ["es2015", "react"],
-    // Do not use ES6 compiler in vendor code
     ignore: [/web\/static\/vendor/]
   }
 },
+```
+
+Only added the `whitelist:` array in the following block:
+```javascript
+npm: {
+  enabled: true,
+  whitelist: ["phoenix", "phoenix_html", "react", "react-dom"]
+}
+```
+
+#### [app.js](/web/static/js/app.js)
+
+Added the `import` calls in the following block:
+```javascript
+import React from "react"
+import ReactDOM from "react-dom"
 ```
