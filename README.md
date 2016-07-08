@@ -43,3 +43,9 @@ import ReactDOM from "react-dom"
 ```
 $ npm install --save react react-dom babel-preset-react
 ```
+
+#### Confirmed installation
+
+```
+$ brunch build
+```
