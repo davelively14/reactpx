@@ -19,3 +19,18 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+// ADD import files for react and react-dom
+import React from "react"
+import ReactDOM from "react-dom"
+
+class HelloWorld extends React.Component {
+  render() {
+    return(<h2>Hello World!</h2>)
+  }
+}
+
+ReactDOM.render(
+  <HelloWorld/>,
+  document.getElementById("hello-world")
+)
